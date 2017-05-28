@@ -42,10 +42,11 @@
 
 1420212242 source:f:\funcode\games\tankwar\sourcecode\icon.rc
 
-1495954280 source:f:\funcode\games\tankwar\sourcecode\src\ctankplayer.cpp
+1495956950 source:f:\funcode\games\tankwar\sourcecode\src\ctankplayer.cpp
 	"CTankPlayer.h"
+	"LessonX.h"
 
-1495955231 f:\funcode\games\tankwar\sourcecode\header\ctankplayer.h
+1495956950 f:\funcode\games\tankwar\sourcecode\header\ctankplayer.h
 	<CommonClass.h>
 
 1422461346 f:\funcode\games\tankwar\sourcecode\header\commonclass.h
@@ -55,12 +56,19 @@
 	"CommonClass.h"
 	"LessonX.h"
 
-1495954583 f:\funcode\games\tankwar\sourcecode\header\lessonx.h
+1495956892 f:\funcode\games\tankwar\sourcecode\header\lessonx.h
 	<Windows.h>
 	"CTankPlayer.h"
+	"Bullet.h"
 
-1495954869 source:f:\funcode\games\tankwar\sourcecode\src\lessonx.cpp
+1495956999 source:f:\funcode\games\tankwar\sourcecode\src\lessonx.cpp
 	<Stdio.h>
 	"CommonClass.h"
 	"LessonX.h"
+
+1495956726 source:f:\funcode\games\tankwar\sourcecode\src\bullet.cpp
+	"Bullet.h"
+
+1495956648 f:\funcode\games\tankwar\sourcecode\header\bullet.h
+	<CommonClass.h>
 

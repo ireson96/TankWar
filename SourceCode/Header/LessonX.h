@@ -9,6 +9,7 @@
 //
 #include <Windows.h>
 #include "CTankPlayer.h"
+#include "Bullet.h"
 
 /////////////////////////////////////////////////////////////////////////////////
 //
@@ -22,6 +23,7 @@ private:
     CSprite*		 m_pStart;
 
     CTankPlayer*     m_pTankPlayer;
+    int m_iBulletNum;
 
 
 public:
@@ -44,6 +46,7 @@ public:
 	void OnKeyDown( const int iKey, const bool bAltPress, const bool bShiftPress, const bool bCtrlPress );
 	void OnKeyUp( const int iKey );
 	void OnSpriteColWorldLimit( const char *szName, const int iColSide );
+	void AddBullet( int iDir,float fPosX,float fPosY ,int iOwner);
 
 };
 

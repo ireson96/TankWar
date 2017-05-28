@@ -75,6 +75,7 @@ void CGameMain::GameInit() {
     m_pTankPlayer = new CTankPlayer("myplayer");
     m_pTankPlayer->CloneSprite("player");
     m_pTankPlayer->Init();
+    m_iBulletNum = 0;
 
 }
 //=============================================================================
@@ -97,6 +98,10 @@ void CGameMain::OnKeyDown( const int iKey, const bool bAltPress, const bool bShi
     }
     if(m_iGameState == 2) {
         m_pTankPlayer->OnMove(iKey, true);
+        if(iKey == KEY_J) { //判断按下键是够为J键
+            m_pTankPlayer->OnFire();
+        }
+
     }
 
 
@@ -110,12 +115,29 @@ void CGameMain::OnKeyUp( const int iKey ) {
 
 void CGameMain::OnSpriteColWorldLimit( const char *szName, const int iColSide ) {
     if(strstr(szName,"player") != NULL) { //判断碰到世界边界的坦克是否为我方坦克
-        if(iColSide==0||iColSide==1){
+        if(iColSide==0||iColSide==1) {
             m_pTankPlayer->SetSpriteLinearVelocityX(0);
 
-        }else if(iColSide==2||iColSide==3){
+        } else if(iColSide==2||iColSide==3) {
             m_pTankPlayer->SetSpriteLinearVelocityY(0);
         }
     }
 
 }
+
+void CGameMain::AddBullet( int iDir,float fPosX,float fPosY ,int iOwner) {
+    char* szName = CSystem::MakeSpriteName("bullet",m_iBulletNum);//创建坦克名字
+    CBullet* pBullet = new CBullet(szName);
+    pBullet->CloneSprite("bullet");
+    pBullet->SetSpriteWorldLimit(WORLD_LIMIT_NULL,-26, -22, 26, 22); //设置世界边界
+    pBullet->SetSpritePosition(fPosX,fPosY);
+    pBullet->SetSpriteCollisionSend(true); //设置接收碰撞
+    pBullet->OnMove(iDir);
+    m_iBulletNum++; //子弹个数加1
+    if(iOwner == 1) {
+        pBullet->SetOwner(1);//1表示我方坦克发射的子弹
+    } else {
+        pBullet->SetOwner(0); //0表示地方坦克发射的子弹
+    }
+}
+

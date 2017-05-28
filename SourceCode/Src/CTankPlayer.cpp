@@ -1,5 +1,5 @@
 #include "CTankPlayer.h"
-
+#include "LessonX.h"
 CTankPlayer::CTankPlayer(const char* szName):CSprite(szName) { //对构造函数进行实现
     m_iDir=0;
     m_fSpeedX=0.f;
@@ -57,4 +57,27 @@ void CTankPlayer::OnMove(int iKey, bool bPress) {
             SetSpriteLinearVelocity(GetSpeedX(),GetSpeedY());
         }
     }
+}
+
+void CTankPlayer::OnFire()
+{
+		float x,y;
+		x = GetSpritePositionX();
+		y = GetSpritePositionY();
+		switch(GetDir())
+		{
+		case 0:
+			y=y-GetSpriteHeight()/2-1;
+			break;
+		case 1:
+			x=x+GetSpriteWidth()/2+1;
+			break;
+		case 2:
+			y=y+GetSpriteHeight()/2+1;
+			break;
+		case 3:
+			x=x-GetSpriteWidth()/2-1;
+			break;
+		}
+		g_GameMain.AddBullet(GetDir(),x,y,1);
 }
