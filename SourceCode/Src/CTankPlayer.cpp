@@ -5,7 +5,7 @@ CTankPlayer::CTankPlayer(const char* szName):CSprite(szName) { //¶Ô¹¹Ôìº¯Êý½øÐÐÊ
     m_fSpeedX=0.f;
     m_fSpeedY=0.f;
     m_iHp=2;
-    m_iMaxSpeed = 8;
+    m_fMaxSpeed = 8;
 }
 
 CTankPlayer::~CTankPlayer() {
@@ -26,21 +26,21 @@ void CTankPlayer::OnMove(int iKey, bool bPress) {
         case KEY_W:
             SetDir(0);
             SetSpeedX(0);
-            SetSpeedY(-m_iMaxSpeed);
+            SetSpeedY(-m_fMaxSpeed);
             break;
         case KEY_D:
             SetDir(1);
-            SetSpeedX(m_iMaxSpeed);
+            SetSpeedX(m_fMaxSpeed);
             SetSpeedY(0);
             break;
         case KEY_S:
             SetDir(2);
             SetSpeedX(0);
-            SetSpeedY(m_iMaxSpeed);
+            SetSpeedY(m_fMaxSpeed);
             break;
         case KEY_A:
             SetDir(3);
-            SetSpeedX(-m_iMaxSpeed);
+            SetSpeedX(-m_fMaxSpeed);
             SetSpeedY(0);
             break;
         }

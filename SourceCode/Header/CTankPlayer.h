@@ -22,8 +22,8 @@ class CTankPlayer : public CSprite
         void OnMove(int iKey,bool bPress);
     protected:
     private:
-    int m_iDir,m_iHp,m_iMaxSpeed;
-    float m_fSpeedX,m_fSpeedY;
+    int m_iDir,m_iHp;
+    float m_fSpeedX,m_fSpeedY,m_fMaxSpeed;
 };
 
 #endif // CTANKPLAYER_H
