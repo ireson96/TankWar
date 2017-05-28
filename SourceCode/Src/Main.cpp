@@ -76,6 +76,7 @@ void CSystem::OnKeyDown( const int iKey, const bool bAltPress, const bool bShift
 void CSystem::OnKeyUp( const int iKey )
 {
 	// 可以在此添加游戏需要的响应函数
+	g_GameMain.OnKeyUp(iKey);
 
 }
 
@@ -92,6 +93,6 @@ void CSystem::OnSpriteColSprite( const char *szSrcName, const char *szTarName )
 // iColSide : 0 左边，1 右边，2 上边，3 下边
 void CSystem::OnSpriteColWorldLimit( const char *szName, const int iColSide )
 {
-
+    g_GameMain.OnSpriteColWorldLimit(szName,iColSide);
 }
 

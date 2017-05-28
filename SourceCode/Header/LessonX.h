@@ -8,6 +8,7 @@
 #define _LESSON_X_H_
 //
 #include <Windows.h>
+#include "CTankPlayer.h"
 
 /////////////////////////////////////////////////////////////////////////////////
 //
@@ -19,6 +20,8 @@ private:
 
 	CSprite*		 m_pSplash;
     CSprite*		 m_pStart;
+
+    CTankPlayer*     m_pTankPlayer;
 
 
 public:
@@ -39,6 +42,8 @@ public:
 
 
 	void OnKeyDown( const int iKey, const bool bAltPress, const bool bShiftPress, const bool bCtrlPress );
+	void OnKeyUp( const int iKey );
+	void OnSpriteColWorldLimit( const char *szName, const int iColSide );
 
 };
 

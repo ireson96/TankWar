@@ -16,3 +16,51 @@
 	"CommonClass.h"
 	"LessonX.h"
 
+1420212242 source:g:\作业\坦克大战\tank\sourcecode\icon.rc
+
+1495953730 source:g:\作业\坦克大战\tank\sourcecode\src\ctankplayer.cpp
+	"CTankPlayer.h"
+
+1495953730 g:\作业\坦克大战\tank\sourcecode\header\ctankplayer.h
+	<CommonClass.h>
+
+1422461346 g:\作业\坦克大战\tank\sourcecode\header\commonclass.h
+	<windows.h>
+
+1495953970 source:g:\作业\坦克大战\tank\sourcecode\src\main.cpp
+	"CommonClass.h"
+	"LessonX.h"
+
+1495954008 g:\作业\坦克大战\tank\sourcecode\header\lessonx.h
+	<Windows.h>
+	"CTankPlayer.h"
+
+1495954008 source:g:\作业\坦克大战\tank\sourcecode\src\lessonx.cpp
+	<Stdio.h>
+	"CommonClass.h"
+	"LessonX.h"
+
+1420212242 source:f:\funcode\games\tankwar\sourcecode\icon.rc
+
+1495954280 source:f:\funcode\games\tankwar\sourcecode\src\ctankplayer.cpp
+	"CTankPlayer.h"
+
+1495955231 f:\funcode\games\tankwar\sourcecode\header\ctankplayer.h
+	<CommonClass.h>
+
+1422461346 f:\funcode\games\tankwar\sourcecode\header\commonclass.h
+	<windows.h>
+
+1495954583 source:f:\funcode\games\tankwar\sourcecode\src\main.cpp
+	"CommonClass.h"
+	"LessonX.h"
+
+1495954583 f:\funcode\games\tankwar\sourcecode\header\lessonx.h
+	<Windows.h>
+	"CTankPlayer.h"
+
+1495954869 source:f:\funcode\games\tankwar\sourcecode\src\lessonx.cpp
+	<Stdio.h>
+	"CommonClass.h"
+	"LessonX.h"
+

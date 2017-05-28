@@ -19,9 +19,10 @@ class CTankPlayer : public CSprite
         float GetSpeedX()            								{return m_fSpeedX;}
         float GetSpeedY()								            {return m_fSpeedY;}
         void Init();
+        void OnMove(int iKey,bool bPress);
     protected:
     private:
-    int m_iDir,m_iHp;
+    int m_iDir,m_iHp,m_iMaxSpeed;
     float m_fSpeedX,m_fSpeedY;
 };
 

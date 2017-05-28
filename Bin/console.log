@@ -1,10 +1,9 @@
-//-------------------------- 5/22/2017 -- 11:01:27 -----
+//-------------------------- 5/28/2017 -- 15:08:18 -----
 Processor Init:
-   AMD (unknown), ~2.60 Ghz
-     (timed at roughly 2.58 Ghz)
+   Intel Pentium III, ~2.80 Ghz
+     (timed at roughly 2.82 Ghz)
    FPU detected
    MMX detected
-   3DNow detected
    SSE detected
  
 Math Init:
@@ -12,7 +11,6 @@ Math Init:
    Installing Assembly extensions
    Installing FPU extensions
    Installing MMX extensions
-   Installing 3DNow extensions
    Installing SSE extensions
  
 Input Init:
@@ -22,10 +20,10 @@ Initializing chunk mappings...
    o 'TEXT' maps to TextChunk
    o 'SCHK' maps to UnknownChunk
    o 'SCHK' maps to SimChunk
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/main.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/game/main.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/main.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/game/main.cs.
  % - Initializing Common
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/preferences/defaultPrefs.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/preferences/defaultPrefs.cs.
 Reading Display Device information...
    Primary Display Device Found:
       Vendor Id: VEN_0000
@@ -33,12 +31,12 @@ Reading Display Device information...
 
 Using OpenGL rendering. Fullscreen: 0
 
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/xml.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/properties.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/common.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/audio.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/canvas.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/cursor.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/xml.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/properties.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/common.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/audio.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/canvas.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/cursor.cs.
 Video Init:
    Accelerated OpenGL display device detected.
    Accelerated D3D device not detected.
@@ -54,9 +52,9 @@ Pixel format set:
 Creating a new rendering context...
 Making the new rendering context current...
 OpenGL driver information:
-  Vendor: ATI Technologies Inc.
-  Renderer: ATI Radeon 3100 Graphics
-  Version: 2.1.7537 Release
+  Vendor: Intel
+  Renderer: Intel(R) HD Graphics
+  Version: 3.1.0 - Build 9.17.10.3040
 OpenGL Init: Enabled Extensions
   ARB_multitexture (Max Texture Units: 8)
   EXT_blend_color
@@ -67,13 +65,13 @@ OpenGL Init: Enabled Extensions
   EXT_fog_coord
   ARB_texture_compression
   EXT_texture_compression_s3tc
+  3DFX_texture_compression_FXT1
   (ARB|EXT)_texture_env_add
   EXT_texture_filter_anisotropic (Max anisotropy: 16)
-  WGL_EXT_swap_control
 OpenGL Init: Disabled Extensions
   EXT_paletted_texture
   NV_vertex_array_range
-  3DFX_texture_compression_FXT1
+  WGL_EXT_swap_control
 
 Max Texture Size reported as: 8192
 Setting screen mode to 800x600x32 (w)...
@@ -83,48 +81,49 @@ OpenAL Driver Init:
    Renderer: Software
    Extensions: EAX 2.0, EAX 3.0, EAX Unified, and EAX-AC3
 
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/profiles.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/cursors.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/messageBoxOk.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/messageBoxYesNo.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/messageBoxYesNoCancel.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/messageBoxOKCancel.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/messageBoxOKCancelDetailsDlg.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/messagePopup.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/options.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/remap.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/console.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/NetworkMenu.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/startServer.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/joinServer.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/waitingForServer.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/helpDlg.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/messageBox.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/help.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gui/chatGui.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/screenshot.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/metrics.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/Gui/FrameOverlayGui.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/scriptDoc.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/keybindings.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/options.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/levelManagement.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/projectManagement.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/projectResources.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/common/gameScripts/align.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/profiles.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/cursors.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/messageBoxOk.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/messageBoxYesNo.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/messageBoxYesNoCancel.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/messageBoxOKCancel.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/messageBoxOKCancelDetailsDlg.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/messagePopup.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/options.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/remap.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/console.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/NetworkMenu.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/startServer.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/joinServer.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/waitingForServer.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/helpDlg.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/messageBox.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/help.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gui/chatGui.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/screenshot.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/metrics.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/Gui/FrameOverlayGui.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/scriptDoc.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/keybindings.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/options.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/levelManagement.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/projectManagement.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/projectResources.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/common/gameScripts/align.cs.
 
 FunCode (v1.7.5) initialized...
-Loading compiled script F:/作业/坦克大战/Tank/Bin/game/managed/datablocks.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/game/managed/persistent.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/game/managed/brushes.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/game/gameScripts/datablocks.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/game/gameScripts/guiProfiles.cs.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/game/gui/mainScreen.gui.
-Loading compiled script F:/作业/坦克大战/Tank/Bin/game/gameScripts/game.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/game/managed/datablocks.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/game/managed/persistent.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/game/managed/brushes.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/game/gameScripts/datablocks.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/game/gameScripts/guiProfiles.cs.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/game/gui/mainScreen.gui.
+Loading compiled script F:/FunCode/Games/TankWar/Bin/game/gameScripts/game.cs.
 Activating DirectInput...
 DirectInput joystick failed to enable!
-Compiling F:/作业/坦克大战/Tank/Bin/game/data/levels/level.t2d...
-Loading compiled script F:/作业/坦克大战/Tank/Bin/game/data/levels/level.t2d.
+Compiling F:/FunCode/Games/TankWar/Bin/game/data/levels/level.t2d...
+Loading compiled script F:/FunCode/Games/TankWar/Bin/game/data/levels/level.t2d.
+t2dSceneGraph::addToScene() - Object '1332' is already in a SceneGraph!.
 DirectInput deactivated.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
