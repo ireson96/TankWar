@@ -10,6 +10,7 @@
 #include <Windows.h>
 #include "CTankPlayer.h"
 #include "Bullet.h"
+#include"TankEnemy.h"
 
 /////////////////////////////////////////////////////////////////////////////////
 //
@@ -17,36 +18,58 @@
 class	CGameMain
 {
 private:
-	int				m_iGameState;				// 游戏状态，0：结束或者等待开始；1：初始化；2：游戏进行中
+    int				m_iGameState;				// 游戏状态，0：结束或者等待开始；1：初始化；2：游戏进行中
 
-	CSprite*		 m_pSplash;
+    CSprite*		 m_pSplash;
     CSprite*		 m_pStart;
 
     CTankPlayer*     m_pTankPlayer;
+    CTankEnemy*      m_pTankEnemy;
     int m_iBulletNum;
+    int g_iMap[11][13]=
+    {
+        {0,0,0,0,0,0,0,0,0,0,0,0,0},
+        {0,0,0,0,0,0,0,0,0,0,0,0,0},
+        {0,1,0,0,0,1,0,1,0,0,0,1,0},
+        {1,1,1,1,1,1,1,1,1,1,1,1,1},
+        {0,0,0,1,0,1,0,1,0,1,0,0,0},
+        {0,0,0,1,0,0,0,0,0,1,0,0,0},
+        {0,0,0,1,0,1,0,1,0,1,0,0,0},
+        {1,1,1,1,1,1,1,1,1,1,1,1,1},
+        {0,1,0,1,0,0,0,0,0,1,0,1,0},
+        {0,0,0,0,0,1,1,1,0,0,0,0,0},
+        {0,0,0,0,0,1,0,1,0,0,0,0,0}
+    };
 
 
 public:
-	CGameMain();            //构造函数
-	~CGameMain();           //析构函数
+    CGameMain();            //构造函数
+    ~CGameMain();           //析构函数
 
-	// Get方法
-	int				GetGameState()											{ return m_iGameState; }
+    // Get方法
+    int				GetGameState()
+    {
+        return m_iGameState;
+    }
 
-	// Set方法
-	void			SetGameState( const int iState )				{ m_iGameState	=	iState; }
+    // Set方法
+    void			SetGameState( const int iState )
+    {
+        m_iGameState	=	iState;
+    }
 
-	// 游戏主循环等
-	void			GameMainLoop( float	fDeltaTime );
-	void			GameInit();
-	void			GameRun( float fDeltaTime );
-	void			GameEnd();
+    // 游戏主循环等
+    void			GameMainLoop( float	fDeltaTime );
+    void			GameInit();
+    void			GameRun( float fDeltaTime );
+    void			GameEnd();
 
 
-	void OnKeyDown( const int iKey, const bool bAltPress, const bool bShiftPress, const bool bCtrlPress );
-	void OnKeyUp( const int iKey );
-	void OnSpriteColWorldLimit( const char *szName, const int iColSide );
-	void AddBullet( int iDir,float fPosX,float fPosY ,int iOwner);
+    void OnKeyDown( const int iKey, const bool bAltPress, const bool bShiftPress, const bool bCtrlPress );
+    void OnKeyUp( const int iKey );
+    void OnSpriteColWorldLimit( const char *szName, const int iColSide );
+    void AddBullet( int iDir,float fPosX,float fPosY ,int iOwner);
+    void LoadMap();
 
 };
 
