@@ -43,36 +43,39 @@
 	"CommonClass.h"
 	"LessonX.h"
 
-1420212242 source:f:\funcode\games\tankwar\sourcecode\icon.rc
+1495903186 source:f:\funcode\games\tankwar\sourcecode\icon.rc
 
-1495956950 source:f:\funcode\games\tankwar\sourcecode\src\ctankplayer.cpp
+1496048826 source:f:\funcode\games\tankwar\sourcecode\src\ctankplayer.cpp
 	"CTankPlayer.h"
 	"LessonX.h"
 
-1495956950 f:\funcode\games\tankwar\sourcecode\header\ctankplayer.h
-	<CommonClass.h>
+1496049130 f:\funcode\games\tankwar\sourcecode\header\ctankplayer.h
+	<Weapon.h>
 
-1422461346 f:\funcode\games\tankwar\sourcecode\header\commonclass.h
+1495903186 f:\funcode\games\tankwar\sourcecode\header\commonclass.h
 	<windows.h>
 
-1495954583 source:f:\funcode\games\tankwar\sourcecode\src\main.cpp
+1495903186 source:f:\funcode\games\tankwar\sourcecode\src\main.cpp
 	"CommonClass.h"
 	"LessonX.h"
 
-1495956892 f:\funcode\games\tankwar\sourcecode\header\lessonx.h
+1496049948 f:\funcode\games\tankwar\sourcecode\header\lessonx.h
 	<Windows.h>
 	"CTankPlayer.h"
 	"Bullet.h"
+	"TankEnemy.h"
+	"Weapon.h"
+	<vector>
 
-1495956999 source:f:\funcode\games\tankwar\sourcecode\src\lessonx.cpp
+1496050098 source:f:\funcode\games\tankwar\sourcecode\src\lessonx.cpp
 	<Stdio.h>
 	"CommonClass.h"
 	"LessonX.h"
 
-1495956726 source:f:\funcode\games\tankwar\sourcecode\src\bullet.cpp
+1496048876 source:f:\funcode\games\tankwar\sourcecode\src\bullet.cpp
 	"Bullet.h"
 
-1495956648 f:\funcode\games\tankwar\sourcecode\header\bullet.h
+1496048342 f:\funcode\games\tankwar\sourcecode\header\bullet.h
 	<CommonClass.h>
 
 1495903186 source:f:\作业\坦克大战\tank\sourcecode\src\ctankplayer.cpp
@@ -142,4 +145,17 @@
 	<Stdio.h>
 	"CommonClass.h"
 	"LessonX.h"
+
+1498274604 f:\funcode\games\tankwar\sourcecode\header\weapon.h
+	<CommonClass.h>
+
+1496049130 f:\funcode\games\tankwar\sourcecode\header\tankenemy.h
+	<Weapon.h>
+
+1496049064 source:f:\funcode\games\tankwar\sourcecode\src\tankenemy.cpp
+	"TankEnemy.h"
+	"LessonX.h"
+
+1496045072 source:f:\funcode\games\tankwar\sourcecode\src\weapon.cpp
+	"Weapon.h"
 
