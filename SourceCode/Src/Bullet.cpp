@@ -1,13 +1,9 @@
 #include "Bullet.h"
 
-CBullet::CBullet(const char* szName):CSprite(szName)
+CBullet::CBullet(const char* szName):CWeapon(szName)
 {
     //ctor
-    m_iDir = 0;
-    m_iHp = 0;
     m_iOwner = 1;
-    m_fSpeedX = 0.f;
-    m_fSpeedY = 0.f;
     m_fMaxSpeed = 10;
 }
 
@@ -40,5 +36,23 @@ void CBullet::OnMove(int iDir)
 		}
 		SetSpriteRotation(90*GetDir());
 		SetSpriteLinearVelocity(GetSpeedX(),GetSpeedY());
+}
+
+void CBullet::OnSpriteColSprite(CWeapon* pSprite)
+{
+	if(pSprite == NULL)
+	{
+		return;
+	}
+	SetHp(0);
+	if(GetOwner() == 1 && strstr(pSprite->GetName(),"aim_nor") != NULL)  //我方坦克子弹与军营发生碰撞
+	{
+		return;
+	}
+	if(GetOwner() == 0 && strstr(pSprite->GetName(),"enemy") != NULL) //敌方坦克子弹打中地方坦克
+{
+		return;
+	}
+pSprite->SetHp(0);
 }
 

@@ -10,7 +10,11 @@
 #include <Windows.h>
 #include "CTankPlayer.h"
 #include "Bullet.h"
-#include"TankEnemy.h"
+#include "TankEnemy.h"
+#include "Weapon.h"
+#include<vector>
+using namespace std;
+
 
 /////////////////////////////////////////////////////////////////////////////////
 //
@@ -24,7 +28,7 @@ private:
     CSprite*		 m_pStart;
 
     CTankPlayer*     m_pTankPlayer;
-    CTankEnemy*      m_pTankEnemy;
+    //CTankEnemy*      m_pTankEnemy;
     int m_iBulletNum;
     int g_iMap[11][13]=
     {
@@ -40,6 +44,18 @@ private:
         {0,0,0,0,0,1,1,1,0,0,0,0,0},
         {0,0,0,0,0,1,0,1,0,0,0,0,0}
     };
+    vector<CWeapon*>	   m_vWeapon;
+    float m_fTankEnemyTime;
+    int m_iTankEnemyNumber;
+    CWeapon* m_pAim_nor;
+
+    CTextSprite*	 m_pScore; //表示分数的文本精灵
+    CTextSprite* 	m_pHight; //表示最高分的文本精灵
+    CTextSprite*	 m_pEnemy;//表示敌人数量的文本精灵
+    int m_iScore;//分数
+    int m_iEnemy;//敌人数量
+    int m_iHight;//几局最高分
+    float  m_fDeltaTime;//表示游戏时间
 
 
 public:
@@ -71,6 +87,11 @@ public:
     void AddBullet( int iDir,float fPosX,float fPosY ,int iOwner);
     void LoadMap();
 
+    CWeapon* FindWeaponByName(const char* szName);
+    void DeleteWeaponByName(const char* szName);
+    void AddTankEnemy(float fDeltaTime);
+    void OnSpriteColSprite(const char *szSrcName, const char *szTarName);
+    void DeleteAllSprite();
 };
 
 /////////////////////////////////////////////////////////////////////////////////

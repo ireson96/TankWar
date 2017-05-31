@@ -4,7 +4,7 @@
 #include <CommonClass.h>
 
 
-class CBullet : public CSprite
+class CBullet : public CWeapon
 {
     public:
         CBullet(const char* szName);

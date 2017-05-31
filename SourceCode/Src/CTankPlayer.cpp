@@ -1,10 +1,7 @@
 #include "CTankPlayer.h"
 #include "LessonX.h"
-CTankPlayer::CTankPlayer(const char* szName):CSprite(szName) { //对构造函数进行实现
-    m_iDir=0;
-    m_fSpeedX=0.f;
-    m_fSpeedY=0.f;
-    m_iHp=2;
+CTankPlayer::CTankPlayer(const char* szName):CWeapon(szName) { //对构造函数进行实现
+
     m_fMaxSpeed = 8;
 }
 
@@ -80,4 +77,22 @@ void CTankPlayer::OnFire()
 			break;
 		}
 		g_GameMain.AddBullet(GetDir(),x,y,1);
+}
+
+void CTankPlayer::OnSpriteColSprite(CWeapon* pSprite)
+{
+	if(pSprite == NULL)
+	{
+		return;
+	}
+	else if(strstr(pSprite->GetName(),"bullet") != NULL)
+	{
+		SetHp(0);
+	}
+	else if(strstr(pSprite->GetName(),"wall") != NULL)
+	{
+		SetSpeedX(0);
+		SetSpeedY(0);
+		SetSpriteLinearVelocity(GetSpeedX(),GetSpeedY());
+	}
 }

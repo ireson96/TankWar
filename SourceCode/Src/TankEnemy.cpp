@@ -1,13 +1,9 @@
 #include "TankEnemy.h"
 #include "LessonX.h"
 
-CTankEnemy::CTankEnemy(const char* szName):CSprite(szName)
+CTankEnemy::CTankEnemy(const char* szName):CWeapon(szName)
 {
     //ctor
-    m_iDir = 0;
-    m_fSpeedX = 0.f;
-    m_fSpeedY = 0.f;
-    m_iHp = 0;
     m_fChangeDirTime = 0.f;
     m_fBulletCreateTime = 0.f;
 }
@@ -116,5 +112,13 @@ void CTankEnemy::OnFire(float fDeltaTime)
 			g_GameMain.AddBullet(GetDir(),x,y,0);
 		}
 }
-
+void CTankEnemy::OnSpriteColSprite(CWeapon* pSprite)
+{
+	if(pSprite == NULL)
+	{
+		return;
+	}
+	SetSpriteLinearVelocity(0.f,0.f);
+    m_fChangeDirTime = 1.8;
+}
 
